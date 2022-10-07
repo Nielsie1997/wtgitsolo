@@ -1,0 +1,49 @@
+<style>
+    h1{
+        background-color:red;
+        padding:20px;
+    }
+</style>
+PARAMETER  
+ARGUMENT
+FUNCTIE  METHODE PROCEDURE () - 
+RETURNTYPE   functie                  
+ 
+
+
+<script>
+
+    function zelfverzonnen(){
+        console.log("eerste");
+        tweedefunctie(24);  // argument
+        tweedefunctie(12);  // argument
+        var mijnvar = tweedefunctie(3);  // argument
+
+// een aanroep van een functie DIE IETS RETURNED 
+// mag je vervangen door datgene dat hij returned
+
+
+        //var mijnvar = tweedefunctie("maandag");
+        console.log(mijnvar);
+
+        console.log( tweedefunctie(5) + tweedefunctie(5) );
+        console.log(   derdefunctie().charAt(2) ) ;
+    }
+    function derdefunctie(){
+            return "maandag";
+        }
+    function tweedefunctie(  meegegevengetal  ){  // parameter
+        console.log("tweede: "+ meegegevengetal);
+        return meegegevengetal + 15;  // int
+    }
+
+
+
+
+
+</script>
+
+<input type=text>
+<input type=button value="Klik hier" onclick="zelfverzonnen()">
+
+
